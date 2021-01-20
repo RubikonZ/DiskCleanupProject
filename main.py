@@ -18,6 +18,8 @@ def check_folder(folder_path):
                     print(f'"{file}" is folder. Checking this folder as well')
                     check_folder(Path(file).absolute())
 
+
+
 if __name__ == '__main__':
     initial_folder = Path.cwd()  # Path where user chooses to start checking folders
     check_folder(initial_folder)
